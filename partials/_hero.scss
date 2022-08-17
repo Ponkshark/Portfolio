@@ -1,0 +1,22 @@
+
+.info-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.img-container {
+    img {
+        float: right;
+        width: 90%;
+        height: 100vh;
+    }
+}
+
+.info-text-cont {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-20%, 70%);
+}
