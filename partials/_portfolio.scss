@@ -1,0 +1,54 @@
+.portfolio-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-left:10%; 
+  padding:30px 15px; 
+  color: white;
+
+  
+
+  #project {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 5px outset white;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    background-color: #13386c;
+
+    img {
+      filter: brightness(20%);
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: filter 0.5s ease;
+    }
+  }
+
+  #project:hover {
+    transform: translateY(-10px);
+    img {
+      filter: brightness(100%);
+    }
+    #project-text {
+      display: none;
+    }
+  }
+
+  .project-text-1 {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    text-align: center;
+  }
+
+  .project-text-2, .project-text-3, .project-text-4 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    text-align: center;
+  }
+}

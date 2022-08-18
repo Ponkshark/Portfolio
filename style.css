@@ -9,6 +9,7 @@
   float: right;
   width: 90%;
   height: 100vh;
+  border-bottom: 5px solid white;
 }
 
 .info-text-cont {
@@ -18,7 +19,7 @@
   transform: translate(-20%, 70%);
 }
 
-.about-text {
+.portfolio-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,16 +27,44 @@
   margin-left: 10%;
   padding: 30px 15px;
   color: white;
-  background-color: #21b0be;
 }
-.about-text #project {
-  height: 300px;
-  width: 300px;
-  border: 5px solid #13386c;
-}
-.about-text #project img {
+.portfolio-cont #project {
+  position: relative;
   height: 200px;
-  width: 300px;
+  width: 200px;
+  border: 5px outset white;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-color: #13386c;
+}
+.portfolio-cont #project img {
+  filter: brightness(20%);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: filter 0.5s ease;
+}
+.portfolio-cont #project:hover {
+  transform: translateY(-10px);
+}
+.portfolio-cont #project:hover img {
+  filter: brightness(100%);
+}
+.portfolio-cont #project:hover #project-text {
+  display: none;
+}
+.portfolio-cont .project-text-1 {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  text-align: center;
+}
+.portfolio-cont .project-text-2, .portfolio-cont .project-text-3, .portfolio-cont .project-text-4 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  text-align: center;
 }
 
 .navbar {
@@ -48,15 +77,26 @@
   position: fixed;
   height: 100%;
   overflow: auto;
+  border-right: 5px solid white;
 }
 .navbar a {
   font-size: 12px;
+}
+.navbar h6 {
+  border-bottom: 3px solid white;
 }
 .navbar #nav-about {
   margin-top: 50px;
 }
 .navbar li.nav-option:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.about-me-cont {
+  text-align: center;
+  margin-left: 10.1%;
+  display: flex;
+  justify-content: center;
 }
 
 * {
@@ -66,6 +106,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #13386c;
 }
 
 h6 {
@@ -73,7 +114,13 @@ h6 {
   font-size: 5vw;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-bottom: 3px solid #454fab;
+}
+
+h5 {
+  color: white;
+  font-size: 3vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 a {

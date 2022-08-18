@@ -1,6 +1,7 @@
 @import "partials/hero",
-        "partials/aboutme",
-        "partials/navbar";
+        "partials/portfolio",
+        "partials/navbar",
+        "partials/aboutme";
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,16 +9,22 @@
         margin:0;
         padding:0;
         overflow-x:hidden;
+        background-color: #13386c;
     }
 }
 
 h6 {
     color: white;
-    //font-size: 500%;
     font-size: 5vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 3px solid #454fab;
+}
+
+h5 {
+    color: white;
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -28,3 +35,4 @@ a {
         text-decoration: underline;
     }
 }
+

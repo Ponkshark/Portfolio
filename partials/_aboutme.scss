@@ -1,20 +1,6 @@
-.about-text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  margin-left:10%; 
-  padding:30px 15px; 
-  color: white;
-  background-color: #21b0be;
-
-  #project {
-    height: 300px;
-    width: 300px;
-    border: 5px solid #13386c;
-    img {
-      height: 200px;
-      width: 300px;
-    }
-  }
+.about-me-cont {
+    text-align: center;
+    margin-left:10.1%; 
+    display: flex;
+    justify-content: center;
 }

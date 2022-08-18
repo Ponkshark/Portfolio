@@ -8,9 +8,14 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+    border-right: 5px solid white;
 
     a {
         font-size: 12px;
+    }
+
+    h6 {
+        border-bottom: 3px solid white;
     }
 
     #nav-about {
