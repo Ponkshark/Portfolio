@@ -97,11 +97,17 @@
 .navbar h6 {
   border-bottom: 3px solid white;
 }
+.navbar #k:hover {
+  text-decoration: none;
+}
 .navbar #nav-about {
   margin-top: 50px;
 }
 .navbar li.nav-option:not(:last-child) {
-  margin-bottom: 15px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 2px solid white;
+  border-bottom-right-radius: 50%;
 }
 
 .about-me-cont {
@@ -110,6 +116,10 @@
   margin-right: 5%;
   display: flex;
   justify-content: center;
+}
+
+.about-me-title-cont {
+  margin-top: 2%;
 }
 
 .coding-title-cont {
@@ -138,6 +148,33 @@
   display: flex;
   justify-content: center;
   border-top: 5px solid white;
+}
+
+.contact-title-cont {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid white;
+}
+
+.contact-cont button {
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #13386c;
+  border: 3px solid white;
+}
+.contact-cont input {
+  width: 250px;
+}
+.contact-cont #yourmessage {
+  height: 100px;
+  width: 250px;
 }
 
 * {
@@ -185,4 +222,8 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+label {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

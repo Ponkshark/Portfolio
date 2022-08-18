@@ -1,0 +1,30 @@
+.contact-title-cont {
+    text-align: center;
+    margin-top: 5%;
+    margin-left:35%; 
+    margin-right: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid white;
+  }
+
+.contact-cont {
+    button {
+        margin-top: 10px;
+        cursor: pointer;
+        color: white;
+        background-color: #13386c;
+        border: 3px solid white;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    #yourmessage {
+        height: 100px;
+        width: 250px;
+    }
+}
