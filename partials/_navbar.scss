@@ -1,0 +1,23 @@
+.navbar {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #13386c;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+    a {
+        font-size: 12px;
+    }
+
+    #nav-about {
+        margin-top: 50px;
+    }
+
+    li.nav-option:not(:last-child) { 
+        margin-bottom: 15px;  
+     }
+}

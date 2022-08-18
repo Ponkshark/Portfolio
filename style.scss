@@ -1,2 +1,30 @@
 @import "partials/hero",
-        "partials/aboutme";
+        "partials/aboutme",
+        "partials/navbar";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+}
+
+h6 {
+    color: white;
+    //font-size: 500%;
+    font-size: 5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #454fab;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
