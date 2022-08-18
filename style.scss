@@ -1,7 +1,9 @@
 @import "partials/hero",
         "partials/portfolio",
         "partials/navbar",
-        "partials/aboutme";
+        "partials/aboutme",
+        "partials/codingexamples",
+        "partials/scs";
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +13,11 @@
         overflow-x:hidden;
         background-color: #13386c;
     }
+}
+
+p {
+    color: white;
+    font-size: 1vw;
 }
 
 h6 {
@@ -25,6 +32,16 @@ h5 {
     font-size: 3vw;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+h4 {
+    color: white;
+    font-size: 2vw;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5vw;
 }
 
 a {

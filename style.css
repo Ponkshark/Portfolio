@@ -19,6 +19,18 @@
   transform: translate(-20%, 70%);
 }
 
+.portfolio-title-cont {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid white;
+}
+
 .portfolio-cont {
   display: flex;
   flex-wrap: wrap;
@@ -94,9 +106,38 @@
 
 .about-me-cont {
   text-align: center;
-  margin-left: 10.1%;
+  margin-left: 15%;
+  margin-right: 5%;
   display: flex;
   justify-content: center;
+}
+
+.coding-title-cont {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid white;
+}
+.coding-title-cont img {
+  width: 80%;
+  height: 80%;
+}
+
+.scion-title-cont {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid white;
 }
 
 * {
@@ -107,6 +148,11 @@
   padding: 0;
   overflow-x: hidden;
   background-color: #13386c;
+}
+
+p {
+  color: white;
+  font-size: 1vw;
 }
 
 h6 {
@@ -121,6 +167,16 @@ h5 {
   font-size: 3vw;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+h4 {
+  color: white;
+  font-size: 2vw;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5vw;
 }
 
 a {
