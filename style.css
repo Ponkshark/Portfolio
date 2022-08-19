@@ -15,9 +15,8 @@
 
 .info-text-cont {
   position: absolute;
-  top: 100%;
   left: 50%;
-  transform: translate(-32%, 270%);
+  transform: translate(-32%, 170%);
 }
 .info-text-cont h6 {
   font-size: 50px;
