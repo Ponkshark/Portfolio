@@ -10,13 +10,17 @@
   width: 90%;
   height: 100vh;
   border-bottom: 5px solid white;
+  filter: contrast(75%);
 }
 
 .info-text-cont {
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translate(-20%, 70%);
+  transform: translate(-32%, 270%);
+}
+.info-text-cont h6 {
+  font-size: 50px;
 }
 
 .portfolio-title-cont {
@@ -134,8 +138,21 @@
   border-top: 5px solid white;
 }
 .coding-title-cont img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.python-example {
+  margin-top: 25px;
+  display: flex;
+}
+.python-example #python-text {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .scion-title-cont {
@@ -177,6 +194,21 @@
   width: 250px;
 }
 
+.back-to-top-cont {
+  margin-left: 35%;
+  margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  border-top: 5px solid white;
+}
+.back-to-top-cont button {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -189,31 +221,32 @@
 
 p {
   color: white;
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 h6 {
   color: white;
-  font-size: 5vw;
+  font-size: 36px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h5 {
   color: white;
-  font-size: 3vw;
+  font-size: 32px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h4 {
   color: white;
-  font-size: 2vw;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 h2 {
   color: white;
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 a {

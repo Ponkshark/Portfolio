@@ -10,7 +10,20 @@
     border-top: 5px solid white;
 
     img {
-        width: 80%;
-        height: 80%;
+        width: 70%;
+        height: 70%;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+  }
+
+  .python-example {
+    margin-top: 25px;
+    display: flex;
+    #python-text {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
     }
   }
