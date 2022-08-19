@@ -6,8 +6,10 @@
 }
 
 .img-container img {
-  float: right;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 90%;
+  float: right;
   height: 100vh;
   border-bottom: 5px solid white;
   filter: contrast(75%);
@@ -15,8 +17,9 @@
 
 .info-text-cont {
   position: absolute;
-  left: 50%;
-  transform: translate(-32%, 170%);
+  left: 40%;
+  right: 20%;
+  transform: translate(0, 30vh);
 }
 .info-text-cont h6 {
   font-size: 50px;
@@ -129,10 +132,11 @@
 }
 
 .coding-title-cont {
+  max-width: 40%;
   text-align: center;
   margin-top: 5%;
   margin-left: 35%;
-  margin-right: 25%;
+  margin-right: 15%;
   padding-top: 2%;
   padding-bottom: 2%;
   display: flex;
@@ -140,8 +144,9 @@
   border-top: 5px solid white;
 }
 .coding-title-cont img {
-  width: 70%;
-  height: 70%;
+  max-height: 650px;
+  width: 50%;
+  height: 50%;
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
@@ -151,17 +156,15 @@
 .python-example {
   margin-top: 25px;
   display: flex;
+  max-height: 650px;
+  max-width: 810.25px;
 }
 .python-example .python-arrow {
+  max-height: 650px;
   color: white;
   font-size: 5vw;
-  padding-top: 40%;
+  padding-top: 30%;
   padding-bottom: 40%;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 .python-example #python-text {
   display: none;
@@ -170,9 +173,13 @@
   border-bottom: 2px solid white;
 }
 
+.python-example:hover .coding-title-cont img {
+  max-height: 650px;
+}
 .python-example:hover #python-text {
   padding-left: 5px;
   padding-right: 5px;
+  width: auto;
   display: block;
 }
 .python-example:hover #python-text h2 {
@@ -249,6 +256,97 @@
   border: 2px solid white;
 }
 
+@media only screen and (max-width: 992px) {
+  .about-me-title-cont {
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .portfolio-title-cont {
+    margin-left: 25%;
+    margin-right: 15%;
+  }
+  .coding-title-cont {
+    max-width: 60%;
+    margin-left: 25%;
+    margin-right: 10%;
+  }
+  .scion-title-cont {
+    margin-left: 25%;
+    margin-right: 15%;
+  }
+  .contact-title-cont {
+    margin-left: 25%;
+    margin-right: 15%;
+  }
+  .back-to-top-cont {
+    margin-left: 25%;
+    margin-right: 15%;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  h5 {
+    font-size: 22px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  h2 {
+    font-size: 14px !important;
+  }
+  .info-text-cont h6 {
+    font-size: 40px;
+  }
+  .info-text-cont h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar a {
+    font-size: 8px;
+  }
+  .about-me-title-cont {
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .portfolio-title-cont {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .coding-title-cont {
+    max-width: 70%;
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .scion-title-cont {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .contact-title-cont {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .back-to-top-cont {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .info-text-cont h6 {
+    font-size: 30px;
+  }
+  .info-text-cont h4 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .info-text-cont h6 {
+    font-size: 25px;
+  }
+  .info-text-cont h4 {
+    font-size: 12px;
+  }
+}
 * {
   font-family: Arial, Helvetica, sans-serif;
 }

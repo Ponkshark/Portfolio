@@ -8,8 +8,9 @@
 
 .img-container {
     img {
-        float: right;
+        object-fit: cover;
         width: 90%;
+        float: right;
         height: 100vh;
         border-bottom: 5px solid white;
         filter: contrast(75%);
@@ -21,6 +22,7 @@
         font-size: 50px;
     }
     position: absolute;
-    left: 50%;
-    transform: translate(-32%, 170%);
+    left: 40%;
+    right: 20%;
+    transform: translate(0, 30vh);
 }

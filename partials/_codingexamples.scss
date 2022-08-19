@@ -1,8 +1,9 @@
 .coding-title-cont {
+    max-width: 40%;
     text-align: center;
     margin-top: 5%;
     margin-left:35%; 
-    margin-right: 25%;
+    margin-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
@@ -10,8 +11,9 @@
     border-top: 5px solid white;
 
     img {
-        width: 70%;
-        height: 70%;
+        max-height: 650px;
+        width: 50%;
+        height: 50%;
         border-top: 2px solid white;
         border-left: 2px solid white;
         border-bottom: 2px solid white;
@@ -22,16 +24,14 @@
   .python-example {
     margin-top: 25px;
     display: flex;
+    max-height: 650px;
+    max-width: 810.25px;
     .python-arrow {
+        max-height: 650px;
         color: white;
         font-size: 5vw;
-        padding-top: 40%;
+        padding-top: 30%;
         padding-bottom: 40%;
-        border-top: 2px solid white;
-        border-right: 2px solid white;
-        border-bottom: 2px solid white;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
     }
     #python-text {
         display: none;
@@ -42,9 +42,15 @@
   }
 
   .python-example:hover {
+    .coding-title-cont{
+        img {
+            max-height: 650px;
+        }
+    }
     #python-text {
         padding-left: 5px;
         padding-right: 5px;
+        width: auto;
         display: block;
         h2 {
             text-decoration: underline;

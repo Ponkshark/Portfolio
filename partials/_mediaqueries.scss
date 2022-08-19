@@ -1,0 +1,132 @@
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .about-me-title-cont {
+        margin-top: 2%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .portfolio-title-cont {
+        margin-left:25%; 
+        margin-right: 15%;
+    }
+
+    .coding-title-cont {
+        max-width: 60%;
+        margin-left: 25%; 
+        margin-right: 10%;
+    }
+
+    .scion-title-cont {
+        margin-left:25%; 
+        margin-right: 15%;
+    }
+
+    .contact-title-cont {
+        margin-left:25%; 
+        margin-right: 15%;
+    }
+
+    .back-to-top-cont {
+        margin-left:25%; 
+        margin-right: 15%;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    h5 {
+        font-size: 22px !important;
+    }
+
+    h4 {
+        font-size: 18px !important;
+    }
+
+    h2 {
+        font-size: 14px !important;
+    }
+
+    .info-text-cont {
+        h6 {
+            font-size: 40px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        a {
+            font-size: 8px;
+        }
+    }
+
+    .about-me-title-cont {
+        margin-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .portfolio-title-cont {
+        margin-left:20%; 
+        margin-right: 10%;
+    }
+
+    .coding-title-cont {
+        max-width: 70%;
+        margin-left: 20%; 
+        margin-right: 10%;
+    }
+
+    .scion-title-cont {
+        margin-left:20%; 
+        margin-right: 10%;
+    }
+
+    .contact-title-cont {
+        margin-left:20%; 
+        margin-right: 10%;
+    }
+
+    .back-to-top-cont {
+        margin-left:20%; 
+        margin-right: 10%;
+    }
+
+    .info-text-cont {
+        h6 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+ 
+    .info-text-cont {
+        h6 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+
+}
