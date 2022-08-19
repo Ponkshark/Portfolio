@@ -8,7 +8,12 @@
     border-top: 5px solid white;
     button {
         color: white;
-        background-color: transparent;
+        background-color: #13386c;
         border: none;
+    }
+    button:hover {
+        background-color: #0c2343;
+        margin-top: -2px;
+        border: 2px solid white;
     }
 }

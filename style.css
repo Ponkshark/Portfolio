@@ -100,6 +100,7 @@
 }
 .navbar h6 {
   border-bottom: 3px solid white;
+  font-size: 50px;
 }
 .navbar #k:hover {
   text-decoration: none;
@@ -143,16 +144,41 @@
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .python-example {
   margin-top: 25px;
   display: flex;
 }
-.python-example #python-text {
+.python-example .python-arrow {
+  color: white;
+  font-size: 5vw;
+  padding-top: 40%;
+  padding-bottom: 40%;
   border-top: 2px solid white;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.python-example #python-text {
+  display: none;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.python-example:hover #python-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+}
+.python-example:hover #python-text h2 {
+  text-decoration: underline;
+}
+.python-example:hover .python-arrow {
+  display: none;
 }
 
 .scion-title-cont {
@@ -186,12 +212,20 @@
   background-color: #13386c;
   border: 3px solid white;
 }
+.contact-cont button:hover {
+  background-color: #0c2343;
+}
 .contact-cont input {
-  width: 250px;
+  margin-top: 5px;
+  padding-left: 10px;
+  width: 240px;
 }
 .contact-cont #yourmessage {
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 100px;
-  width: 250px;
+  width: 230px;
 }
 
 .back-to-top-cont {
@@ -205,8 +239,13 @@
 }
 .back-to-top-cont button {
   color: white;
-  background-color: transparent;
+  background-color: #13386c;
   border: none;
+}
+.back-to-top-cont button:hover {
+  background-color: #0c2343;
+  margin-top: -2px;
+  border: 2px solid white;
 }
 
 * {
@@ -236,6 +275,7 @@ h5 {
   font-size: 32px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 h4 {
