@@ -96,6 +96,8 @@
   height: 100%;
   overflow: auto;
   border-right: 5px solid white;
+  transition: 0.5s;
+  z-index: 3;
 }
 .navbar a {
   font-size: 12px;
@@ -115,6 +117,26 @@
   margin-bottom: 7px;
   border-bottom: 2px solid white;
   border-bottom-right-radius: 50%;
+}
+
+.menu-but {
+  position: fixed;
+  bottom: 50vh;
+  left: 0;
+  width: 50px;
+  height: 80px;
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 0% 50% 50% 0%;
+  background-color: #13386c;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+}
+
+.menu-but:hover {
+  background-color: #0c2343;
 }
 
 .about-me-cont {
@@ -233,7 +255,11 @@
   padding-left: 10px;
   padding-right: 10px;
   height: 100px;
-  width: 230px;
+  width: 234px;
+}
+.contact-cont #required:after {
+  content: " *";
+  color: red;
 }
 
 .back-to-top-cont {
@@ -302,9 +328,26 @@
     font-size: 20px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #navbarid {
+    display: block !important;
+  }
+  #main {
+    margin-left: 0 !important;
+  }
+}
 @media only screen and (max-width: 768px) {
   .navbar a {
     font-size: 8px;
+  }
+  #navbarid {
+    display: none;
+  }
+  .menu-but {
+    display: block;
+  }
+  .img-container img {
+    width: 100%;
   }
   .about-me-title-cont {
     margin-top: 2%;

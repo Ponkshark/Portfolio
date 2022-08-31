@@ -35,6 +35,11 @@
         padding-left: 10px;
         padding-right: 10px;
         height: 100px;
-        width: 230px;
+        width: 234px;
+    }
+
+    #required:after {
+        content:" *";
+        color: red;
     }
 }

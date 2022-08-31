@@ -63,11 +63,34 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    #navbarid {
+        display: block !important;
+    }
+    #main {
+        margin-left: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .navbar {
         a {
             font-size: 8px;
+        }
+    }
+
+    #navbarid {
+        display: none;
+    }
+
+    .menu-but {
+        display: block;
+    }
+
+    .img-container {
+        img {
+            width: 100%;
         }
     }
 
