@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1150px) {
 
 }
 
@@ -7,19 +7,29 @@
 
     .about-me-title-cont {
         margin-top: 2%;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 30%;
+        padding-right: 30%;
+        #about-me-id {
+            padding-top: 25px;
+        }
     }
 
     .portfolio-title-cont {
         margin-left:25%; 
         margin-right: 15%;
+        #portfolio-title-id{
+            padding-top: 25px;
+        }
     }
 
     .coding-title-cont {
         max-width: 60%;
         margin-left: 25%; 
         margin-right: 10%;
+        #coding-examples-title-id {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
         .python-example {
             img {
                 width: 433px;
@@ -37,6 +47,11 @@
     .scion-title-cont {
         margin-left:25%; 
         margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+        #scion-1{
+            padding-top: 25px;
+        }
     }
 
     .contact-title-cont {
@@ -108,8 +123,8 @@
 
     .about-me-title-cont {
         margin-top: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
     .portfolio-title-cont {
@@ -121,6 +136,18 @@
         max-width: 70%;
         margin-left: 20%; 
         margin-right: 10%;
+        .python-example {
+            img {
+                width: 433px;
+                height: 600px;
+            }
+        }
+        .javascript-example {
+            img {
+                width: 433px;
+                height: 400px;
+            }
+        }
     }
 
     .scion-title-cont {
@@ -150,6 +177,12 @@
 
 @media only screen and (max-width: 576px) {
  
+    .about-me-title-cont {
+        margin-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .info-text-cont {
         h6 {
             font-size: 25px;
