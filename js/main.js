@@ -70,3 +70,69 @@ function opencloseNav() {
         document.getElementById("menu-but-id").style.left = "0";
     }
   } 
+
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+
+window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2()};
+
+function portfolio1Slide() {
+    if (document.documentElement.scrollTop > 750) {
+      document.getElementById("projectid1").className = "slideUp";
+      document.getElementById("projectid1").style = "visibility: visible";
+    }
+}
+
+function portfolio2Slide() {
+    if (document.documentElement.scrollTop > 750) {
+      document.getElementById("projectid2").className = "slideUp";
+      document.getElementById("projectid2").style = "visibility: visible";
+    }
+}
+
+function portfolio3Slide() {
+  if (document.documentElement.scrollTop > 750) {
+    document.getElementById("projectid3").className = "slideUp";
+    document.getElementById("projectid3").style = "visibility: visible";
+  }
+}
+
+function portfolio4Slide() {
+  if (document.documentElement.scrollTop > 750) {
+    document.getElementById("projectid4").className = "slideUp";
+    document.getElementById("projectid4").style = "visibility: visible";
+  }
+}
+
+function portfolio2SlideDelay() {setTimeout(
+  function (){
+    portfolio2Slide();      
+  }, 250)
+};
+
+function portfolio3SlideDelay() {setTimeout(
+  function (){
+    portfolio3Slide();      
+  }, 500)
+};
+
+function portfolio4SlideDelay() {setTimeout(
+  function (){
+    portfolio4Slide();      
+  }, 750)
+};
+
+function codingSlide() {
+    if (document.documentElement.scrollTop > 1200) {
+      document.getElementById("p-example-1").className = "slideLeft";
+      document.getElementById("p-example-1").style = "visibility: visible";
+    }
+}
+
+function codingSlide2() {
+  if (document.documentElement.scrollTop > 1750) {
+    document.getElementById("j-example-1").className = "slideRight";
+    document.getElementById("j-example-1").style = "visibility: visible";
+  }
+}

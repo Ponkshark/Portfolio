@@ -21,7 +21,7 @@
 
   
 
-  #project {
+  #projectid1, #projectid2, #projectid3, #projectid4 {
     position: relative;
     height: 200px;
     width: 200px;
@@ -40,7 +40,7 @@
     }
   }
 
-  #project:hover {
+  #projectid1:hover, #projectid2:hover, #projectid3:hover, #projectid4:hover {
     transform: translateY(-10px);
     img {
       filter: brightness(100%);

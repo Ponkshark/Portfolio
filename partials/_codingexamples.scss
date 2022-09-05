@@ -10,36 +10,73 @@
     justify-content: center;
     border-top: 5px solid white;
 
+    
+  }
+
+  .javascript-example {
+    margin-top: 50px;
+    display: flex;
     img {
-        max-height: 650px;
-        width: 50%;
-        height: 50%;
+        width: 650px;
+        height: 510.25px;
         border-top: 2px solid white;
         border-left: 2px solid white;
         border-bottom: 2px solid white;
         border-right: 2px solid white;
+        transition: filter 1s ease;
+    }
+    #j-example-1 {
+        position: relative;
+    }
+    #j-example-1:hover {
+        img {
+            filter: brightness(50%);
+        }
+    }
+    #javascript-text {
+        position: absolute;
+        width: 650px;
+        height: 510.25px;
+        top: 50px;
+        left: 30px;
+        display: none;
+        animation: fadeIn 1s;
     }
   }
 
   .python-example {
     margin-top: 25px;
     display: flex;
-    max-height: 650px;
-    max-width: 810.25px;
-    .python-arrow {
-        max-height: 650px;
-        color: white;
-        font-size: 5vw;
-        padding-top: 30%;
-        padding-bottom: 40%;
+        img {
+            width: 650px;
+            height: 810.25px;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transition: filter 1s ease;
+    }
+    #p-example-1 {
+        position: relative;
+    }
+    #p-example-1:hover {
+        img {
+            filter: brightness(50%);
+        }
     }
     #python-text {
+        position: absolute;
+        width: 650px;
+        height: 810.25px;
+        top: 50px;
+        left: 30px;
         display: none;
-        border-top: 2px solid white;
-        border-right: 2px solid white;
-        border-bottom: 2px solid white;
+        animation: fadeIn 1s;
     }
   }
+
+
+
 
   .python-example:hover {
     .coding-title-cont{
@@ -48,15 +85,29 @@
         }
     }
     #python-text {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 55px;
+        padding-right: 55px;
         width: auto;
         display: block;
         h2 {
             text-decoration: underline;
         }
     }
-    .python-arrow {
-        display: none;
+  }
+
+  .javascript-example:hover {
+    .coding-title-cont{
+        img {
+            max-height: 650px;
+        }
+    }
+    #javascript-text {
+        padding-left: 55px;
+        padding-right: 55px;
+        width: auto;
+        display: block;
+        h2 {
+            text-decoration: underline;
+        }
     }
   }

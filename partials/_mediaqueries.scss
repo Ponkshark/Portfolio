@@ -20,6 +20,18 @@
         max-width: 60%;
         margin-left: 25%; 
         margin-right: 10%;
+        .python-example {
+            img {
+                width: 433px;
+                height: 540px;
+            }
+        }
+        .javascript-example {
+            img {
+                width: 433px;
+                height: 340px;
+            }
+        }
     }
 
     .scion-title-cont {
@@ -147,9 +159,52 @@
         }
     }
 
+    .coding-title-cont {
+        .python-example {
+            img {
+                width: 325px;
+                height: 405px;
+            }
+        }
+        .javascript-example {
+            img {
+                width: 325px;
+                height: 255px;
+            }
+        }
+    }
+
 }
 
 
 @media only screen and (max-width: 280px) {
+    .coding-title-cont {
+        .python-example {
+            img {
+                width: 217px;
+                height: 270px;
+            }
+        }
+        .javascript-example {
+            img {
+                width: 217px;
+                height: 170px;
+            }
+        }
+    }
+    .python-example:hover {
+        #python-text {
+            top: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .javascript-example:hover {
+        #javascript-text {
+            top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 
 }
