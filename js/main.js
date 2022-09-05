@@ -75,7 +75,7 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2()};
+window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2(), scionSlide1(), scionSlide2(), scionSlide3(), scionSlide4(), scionSlide5(), scionSlide6(), scionSlide7(), scionSlide8()};
 
 function portfolio1Slide() {
     if (document.documentElement.scrollTop > 750) {
@@ -134,5 +134,61 @@ function codingSlide2() {
   if (document.documentElement.scrollTop > 1750) {
     document.getElementById("j-example-1").className = "slideRight";
     document.getElementById("j-example-1").style = "visibility: visible";
+  }
+}
+
+function scionSlide1() {
+  if (document.documentElement.scrollTop > 2600) {
+    document.getElementById("scion-1").className = "slideUp";
+    document.getElementById("scion-1").style = "visibility: visible";
+  }
+}
+
+function scionSlide2() {
+  if (document.documentElement.scrollTop > 2700) {
+    document.getElementById("scion-2").className = "slideUp";
+    document.getElementById("scion-2").style = "visibility: visible";
+  }
+}
+
+function scionSlide3() {
+  if (document.documentElement.scrollTop > 2800) {
+    document.getElementById("scion-3").className = "slideUp";
+    document.getElementById("scion-3").style = "visibility: visible";
+  }
+}
+
+function scionSlide4() {
+  if (document.documentElement.scrollTop > 2950) {
+    document.getElementById("scion-4").className = "slideUp";
+    document.getElementById("scion-4").style = "visibility: visible";
+  }
+}
+
+function scionSlide5() {
+  if (document.documentElement.scrollTop > 3000) {
+    document.getElementById("scion-5").className = "slideUp";
+    document.getElementById("scion-5").style = "visibility: visible";
+  }
+}
+
+function scionSlide6() {
+  if (document.documentElement.scrollTop > 3050) {
+    document.getElementById("scion-6").className = "slideUp";
+    document.getElementById("scion-6").style = "visibility: visible";
+  }
+}
+
+function scionSlide7() {
+  if (document.documentElement.scrollTop > 3100) {
+    document.getElementById("scion-7").className = "slideUp";
+    document.getElementById("scion-7").style = "visibility: visible";
+  }
+}
+
+function scionSlide8() {
+  if (document.documentElement.scrollTop > 3150) {
+    document.getElementById("scion-8").className = "slideUp";
+    document.getElementById("scion-8").style = "visibility: visible";
   }
 }

@@ -8,4 +8,7 @@
     display: flex;
     justify-content: center;
     border-top: 5px solid white;
+    h5, h4, p, h2 {
+      visibility: hidden;
+    }
   }

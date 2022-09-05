@@ -264,6 +264,9 @@
   justify-content: center;
   border-top: 5px solid white;
 }
+.scion-title-cont h5, .scion-title-cont h4, .scion-title-cont p, .scion-title-cont h2 {
+  visibility: hidden;
+}
 
 .contact-title-cont {
   text-align: center;
