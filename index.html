@@ -155,7 +155,7 @@
                 <div>
                     <h5>Contact Me</h5>
                     <div class="contact-cont">
-                        <form name="contactForm" onsubmit="return validateForm()" method="post">
+                        <form name="contactForm" id="testtest" onsubmit="return validateForm(document.contactForm.youremail)" method="post">
                             <span class="contact-item">
                                 <label for="yourname" class="contact-label" id="required">Your Name</label><br>
                                 <input type="text" id="yourname" name="yourname"><br><br>
@@ -173,7 +173,7 @@
                                 <textarea id="yourmessage" name="yourmessage"></textarea><br>
                             </span>
                             <span class="sub-item">
-                            <button class="subscribe-but" onclick="ValidateEmail(document.contactForm.youremail)">Submit</button>
+                            <button class="subscribe-but">Submit</button>
                             </span>
                         </form>
                     </div>
