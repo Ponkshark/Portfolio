@@ -75,6 +75,15 @@ function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
+
 window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2(), scionSlide1(), scionSlide2(), scionSlide3(), scionSlide4(), scionSlide5(), scionSlide6(), scionSlide7(), scionSlide8()};
 
 function portfolio1Slide() {
