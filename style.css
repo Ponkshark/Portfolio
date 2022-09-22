@@ -78,7 +78,13 @@
   top: 50px;
   text-align: center;
 }
-.portfolio-cont .project-text-2, .portfolio-cont .project-text-3, .portfolio-cont .project-text-4 {
+.portfolio-cont .project-text-2 {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  text-align: center;
+}
+.portfolio-cont .project-text-3, .portfolio-cont .project-text-4 {
   position: absolute;
   left: 50px;
   top: 50px;

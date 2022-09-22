@@ -57,7 +57,14 @@
     text-align: center;
   }
 
-  .project-text-2, .project-text-3, .project-text-4 {
+  .project-text-2{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    text-align: center;
+  } 
+  
+  .project-text-3, .project-text-4 {
     position: absolute;
     left: 50px;
     top: 50px;
