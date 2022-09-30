@@ -13,6 +13,7 @@ function typeWriter() {
 }
 
 
+
 setTimeout(
 function typeWriter2() {
     if (j < txt2.length) {
@@ -60,8 +61,8 @@ function validateForm(inputText) {
 function opencloseNav() {
     if (document.getElementById("navbarid").style.display === "none") {
         document.getElementById("navbarid").style.display = "block";
-        document.getElementById("main").style.marginLeft = "10%";
-        document.getElementById("menu-but-id").style.left = "10vw";
+        document.getElementById("main").style.marginLeft = "15%";
+        document.getElementById("menu-but-id").style.left = "15vw";
     } else {
         document.getElementById("navbarid").style.display = "none";
         document.getElementById("main").style.marginLeft = "0";
@@ -82,7 +83,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 
-window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2(), scionSlide1(), scionSlide2(), scionSlide3(), scionSlide4(), scionSlide5(), scionSlide6(), scionSlide7(), scionSlide8()};
+window.onscroll = function() {portfolio1Slide(), portfolio2SlideDelay(), portfolio3SlideDelay(), portfolio4SlideDelay(), codingSlide(), codingSlide2(), codingSlide3(), scionSlide1(), scionSlide2(), scionSlide3(), scionSlide4(), scionSlide5(), scionSlide6(), scionSlide7(), scionSlide8()};
 
 function portfolio1Slide() {
     if (document.documentElement.scrollTop > 750) {
@@ -141,6 +142,13 @@ function codingSlide2() {
   if (document.documentElement.scrollTop > 1750) {
     document.getElementById("j-example-1").className = "slideRight";
     document.getElementById("j-example-1").style = "visibility: visible";
+  }
+}
+
+function codingSlide3() {
+  if (document.documentElement.scrollTop > 2050) {
+    document.getElementById("sql-example-1").className = "slideLeft";
+    document.getElementById("sql-example-1").style = "visibility: visible";
   }
 }
 

@@ -3,6 +3,11 @@
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script src="https://kit.fontawesome.com/d8fc1f1b84.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
         <script src="js/main.js"></script>
@@ -15,6 +20,7 @@
             <li class="nav-option"><a href="#coding-id">Coding Examples</a></li>
             <li class="nav-option"><a href="#scion-id">SCS</a></li>
             <li class="nav-option"><a href="#contact-id">Contact Me</a></li>
+            <li class="nav-option"><a href="https://github.com/Ponkshark"><i class="fa-brands fa-github fa-2xl"></i></a></li>
         </ul>
         <button class="menu-but" id="menu-but-id" onclick="opencloseNav()"><i class="fa-solid fa-bars"></i></button>
         <div id="main">
@@ -111,6 +117,26 @@
                                 <p>This example uses JavaScript functions to iterate through given text,
                                     letter by letter, and appends them to their corresponding Ids in 
                                     the HTML. Thus giving a typewriter-like effect to the text on load.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sql-example">
+                        <div id="sql-example-1" style="visibility:hidden;">
+                            <img src="img/coding-example-3.png">
+                            <span id="sql-text">
+                                <h2>SQL Example</h2>
+                                <p>This is an example showing the querying of a movie database.<br><br>
+                                    Firstly it selects and adds a column header to movies and their
+                                    years of release from the "movie" table, as well selecting a subquery of all ratings
+                                    of all the movies from the "rating" table.<br><br>
+                                    Then it creates a second sub-query that works as an inner join between
+                                    the "movie" and "rating" table to only select shared movies, and then
+                                    only selects movies that have been given a rating, and whose rating is
+                                    higher than 7/10.<br><br>
+                                    Finally the entire table is ordered by the year of movie release in
+                                    descending order. Thus showing a final table with each movie with a rating higher than 7,
+                                    it's release date, and said rating.
                                 </p>
                             </span>
                         </div>

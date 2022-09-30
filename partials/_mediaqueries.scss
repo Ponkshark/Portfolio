@@ -42,6 +42,12 @@
                 height: 340px;
             }
         }
+        .sql-example {
+            img {
+                width: 433px;
+                height: auto;
+            }
+        }
     }
 
     .scion-title-cont {
@@ -103,7 +109,7 @@
 
     .navbar {
         a {
-            font-size: 8px;
+            font-size: 12px;
         }
     }
 
@@ -146,6 +152,12 @@
             img {
                 width: 433px;
                 height: 400px;
+            }
+        }
+        .sql-example {
+            img {
+                width: 433px;
+                height: auto;
             }
         }
     }
@@ -205,6 +217,12 @@
                 height: 255px;
             }
         }
+        .sql-example {
+            img {
+                width: 325px;
+                height: auto;
+            }
+        }
     }
 
 }
@@ -224,6 +242,12 @@
                 height: 170px;
             }
         }
+        .sql-example {
+            img {
+                width: 217px;
+                height: auto;
+            }
+        }
     }
     .python-example:hover {
         #python-text {
@@ -235,6 +259,13 @@
     .javascript-example:hover {
         #javascript-text {
             top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .sql-example:hover {
+        #sql-text {
+            top: 20px;
             padding-left: 15px;
             padding-right: 15px;
         }
