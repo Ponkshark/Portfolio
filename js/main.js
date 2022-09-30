@@ -25,28 +25,35 @@ function typeWriter2() {
 
 
 function validateForm(inputText) {
-    var mailformat = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/ ;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
     let x = document.forms["contactForm"]["yourname"].value;
+    const $result = $('#result')
+    $result.text('')
     if (x==null || x == "") {
-      alert("Name field required");
+      $result.text("Name field required");
+      $result.css('color', 'red');
       return false;
     }
     let y = document.forms["contactForm"]["youremail"].value;
     if (y==null || y == "") {
-        alert("Email field required");
+      $result.text("Email field required");
+      $result.css('color', 'red');
         return false;
     }
     let z = document.forms["contactForm"]["yourmessage"].value;
     if (z==null || z == "") {
-        alert("Message field required");
+      $result.text("Message field required");
+      $result.css('color', 'red');
         return false;
     }
     if(inputText.value.match(mailformat)) {
       document.contactForm.youremail.focus();
-      alert("Form submitted");
+      $result.text("Form submitted");
+      $result.css('color', 'green');
       return true;
     } else {
-      alert("You have entered an invalid email address!");
+      $result.text("You have entered an invalid email address!");
+      $result.css('color', 'red');
       document.contactForm.youremail.focus();
       return false;
     }

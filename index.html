@@ -20,7 +20,7 @@
             <li class="nav-option"><a href="#coding-id">Coding Examples</a></li>
             <li class="nav-option"><a href="#scion-id">SCS</a></li>
             <li class="nav-option"><a href="#contact-id">Contact Me</a></li>
-            <li class="nav-option"><a href="https://github.com/Ponkshark"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+            <li class="nav-option"><a href="https://github.com/Ponkshark" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
         </ul>
         <button class="menu-but" id="menu-but-id" onclick="opencloseNav()"><i class="fa-solid fa-bars"></i></button>
         <div id="main">
@@ -66,14 +66,16 @@
                     <a href="https://ponkshark.github.io/NetMatters/" target="_blank"><img src="img/project1.png" alt="Image of Netmatters website"></a>
                     <div id="project-text" class="project-text-1">
                         <h3>Project 1</h3>
-                        <p><a href="https://ponkshark.github.io/NetMatters/" target="_blank">Netmatters Website</a></p>
+                        <p><a href="https://ponkshark.github.io/NetMatters/" target="_blank">Netmatters Website Recreation</a></p>
+                        <p id="code-lang">HTML, CSS, JavaScript</p>
                     </div>
                 </div>
                 <div class="project2" id="projectid2" style="visibility:hidden;">
                     <a href="https://ponkshark.github.io/JavaScriptArray/" target="_blank"><img src="img/project2.png" alt="Image of JavaScript Website"></a>
                     <div id="project-text" class="project-text-2">
                         <h3>Project 2</h3>
-                        <p><a href="https://ponkshark.github.io/JavaScriptArray/" target="_blank">JavaScript Array</a></p>
+                        <p><a href="https://ponkshark.github.io/JavaScriptArray/" target="_blank">Image Array</a></p>
+                        <p id="code-lang">JavaScript, jQuery</p>
                     </div>
                 </div>
                 <div class="project3" id="projectid3" style="visibility:hidden;">
@@ -104,7 +106,9 @@
                                     classes that store information into turbines, as well as store turbines into windfarms.
                                     This is an example of a function that on input of air density,
                                     wind velocity, downstream velocity, and upstream velocity,
-                                    returns the maximum power output of a wind turbine.
+                                    returns the maximum power output of a wind turbine. This is achieved by checking the 
+                                    upstream and downstream winds, the turbines efficiency, the area achieved by the spinning blades,
+                                    and then putting it all into a formula that returns the maximum power of the turbine. 
                                 </p>
                             </span>
                         </div>
@@ -116,7 +120,9 @@
                                 <h2>JavaScript Example</h2>
                                 <p>This example uses JavaScript functions to iterate through given text,
                                     letter by letter, and appends them to their corresponding Ids in 
-                                    the HTML. Thus giving a typewriter-like effect to the text on load.
+                                    the HTML with a delay of 50 milliseconds per letter. The function stops only when it has
+                                    iterated times equal to the length of the text given.
+                                    Thus this function gives a typewriter-like effect to the given text on page load.
                                 </p>
                             </span>
                         </div>
@@ -182,8 +188,9 @@
                     <h5>Contact Me</h5>
                     <div class="contact-cont">
                         <form name="contactForm" id="testtest" onsubmit="return validateForm(document.contactForm.youremail)" method="post">
+                            <span id="result"></span>
                             <span class="contact-item">
-                                <label for="yourname" class="contact-label" id="required">Your Name</label><br>
+                                <label for="yourname" class="contact-label" id="required"><br><br>Your Name</label><br>
                                 <input type="text" id="yourname" name="yourname"><br><br>
                             </span>
                             <span class="contact-item">

@@ -74,21 +74,27 @@
 }
 .portfolio-cont .project-text-1 {
   position: absolute;
-  left: 30px;
-  top: 50px;
+  left: 0px;
+  top: 35px;
   text-align: center;
 }
 .portfolio-cont .project-text-2 {
   position: absolute;
-  left: 40px;
-  top: 50px;
+  left: 50px;
+  top: 35px;
   text-align: center;
+}
+.portfolio-cont .project-text-2 #code-lang {
+  margin-top: 30px;
 }
 .portfolio-cont .project-text-3, .portfolio-cont .project-text-4 {
   position: absolute;
   left: 50px;
   top: 50px;
   text-align: center;
+}
+.portfolio-cont #code-lang {
+  font-size: 12px;
 }
 
 .navbar {
@@ -205,6 +211,9 @@
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
+.javascript-example #javascript-text p {
+  line-height: 25px;
+}
 
 .python-example {
   margin-top: 25px;
@@ -235,6 +244,9 @@
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
+.python-example #python-text p {
+  line-height: 25px;
+}
 
 .sql-example {
   margin-top: 25px;
@@ -264,6 +276,9 @@
   display: none;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
+}
+.sql-example #sql-text p {
+  line-height: 25px;
 }
 
 .python-example:hover .coding-title-cont img {
@@ -344,15 +359,17 @@
 }
 .contact-cont input {
   margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
-  width: 240px;
+  width: 440px;
 }
 .contact-cont #yourmessage {
   margin-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
   height: 100px;
-  width: 234px;
+  width: 434px;
 }
 .contact-cont #required:after {
   content: " *";

@@ -26,8 +26,10 @@
 
     input {
         margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 10px;
-        width: 240px;
+        width: 440px;
     }
 
     #yourmessage {
@@ -35,7 +37,7 @@
         padding-left: 10px;
         padding-right: 10px;
         height: 100px;
-        width: 234px;
+        width: 434px;
     }
 
     #required:after {

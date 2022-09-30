@@ -52,16 +52,19 @@
 
   .project-text-1 {
     position: absolute;
-    left: 30px;
-    top: 50px;
+    left: 0px;
+    top: 35px;
     text-align: center;
   }
 
   .project-text-2{
     position: absolute;
-    left: 40px;
-    top: 50px;
+    left: 50px;
+    top: 35px;
     text-align: center;
+    #code-lang {
+      margin-top: 30px;
+    }
   } 
   
   .project-text-3, .project-text-4 {
@@ -69,5 +72,9 @@
     left: 50px;
     top: 50px;
     text-align: center;
+  }
+
+  #code-lang {
+    font-size: 12px;
   }
 }
