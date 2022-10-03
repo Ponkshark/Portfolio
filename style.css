@@ -93,7 +93,7 @@
   top: 50px;
   text-align: center;
 }
-.portfolio-cont #code-lang {
+.portfolio-cont #code-lang1, .portfolio-cont #code-lang2 {
   font-size: 12px;
 }
 
@@ -414,6 +414,12 @@
   }
   .portfolio-title-cont #portfolio-title-id {
     padding-top: 25px;
+  }
+  .portfolio-cont #project-text-1 {
+    position: absolute;
+    left: 18px;
+    top: 35px;
+    text-align: center;
   }
   .coding-title-cont {
     max-width: 60%;
