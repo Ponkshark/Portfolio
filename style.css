@@ -69,25 +69,25 @@
 .portfolio-cont #projectid1:hover img, .portfolio-cont #projectid2:hover img, .portfolio-cont #projectid3:hover img, .portfolio-cont #projectid4:hover img {
   filter: brightness(100%);
 }
-.portfolio-cont #projectid1:hover #project-text, .portfolio-cont #projectid2:hover #project-text, .portfolio-cont #projectid3:hover #project-text, .portfolio-cont #projectid4:hover #project-text {
+.portfolio-cont #projectid1:hover .project-text, .portfolio-cont #projectid2:hover .project-text, .portfolio-cont #projectid3:hover .project-text, .portfolio-cont #projectid4:hover .project-text {
   display: none;
 }
-.portfolio-cont .project-text-1 {
+.portfolio-cont #project-text-1 {
   position: absolute;
   left: 0px;
   top: 35px;
   text-align: center;
 }
-.portfolio-cont .project-text-2 {
+.portfolio-cont #project-text-2 {
   position: absolute;
   left: 50px;
   top: 35px;
   text-align: center;
 }
-.portfolio-cont .project-text-2 #code-lang {
+.portfolio-cont #project-text-2 #code-lang {
   margin-top: 30px;
 }
-.portfolio-cont .project-text-3, .portfolio-cont .project-text-4 {
+.portfolio-cont #project-text-3, .portfolio-cont #project-text-4 {
   position: absolute;
   left: 50px;
   top: 50px;
@@ -371,7 +371,7 @@
   height: 100px;
   width: 434px;
 }
-.contact-cont #required:after {
+.contact-cont #required-name:after, .contact-cont #required-email:after, .contact-cont #required-message:after {
   content: " *";
   color: red;
 }
@@ -381,16 +381,19 @@
   margin-right: 25%;
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  text-align: center;
+  padding-top: 5px;
   margin-bottom: 15px;
   border-top: 5px solid white;
-}
-.back-to-top-cont button {
   color: white;
-  background-color: #13386c;
   border: none;
+  padding-bottom: 5px;
 }
-.back-to-top-cont button:hover {
+.back-to-top-cont a {
+  background-color: #13386c;
+  width: 100px;
+}
+.back-to-top-cont a:hover {
   background-color: #0c2343;
   margin-top: -2px;
   border: 2px solid white;
@@ -524,6 +527,12 @@
     margin-left: 20%;
     margin-right: 10%;
   }
+  .contact-cont input {
+    width: 340px;
+  }
+  .contact-cont #yourmessage {
+    width: 334px;
+  }
   .back-to-top-cont {
     margin-left: 20%;
     margin-right: 10%;
@@ -558,6 +567,12 @@
   .coding-title-cont .sql-example img {
     width: 325px;
     height: auto;
+  }
+  .contact-cont input {
+    width: 240px;
+  }
+  .contact-cont #yourmessage {
+    width: 234px;
   }
 }
 @media only screen and (max-width: 280px) {

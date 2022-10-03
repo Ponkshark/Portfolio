@@ -3,17 +3,22 @@
     margin-right: 25%;
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    text-align: center;
+    padding-top: 5px;
     margin-bottom: 15px;
     border-top: 5px solid white;
-    button {
-        color: white;
+    color: white;
+    border: none;
+    padding-bottom: 5px;
+    a {
         background-color: #13386c;
-        border: none;
+        width: 100px;
     }
-    button:hover {
+    a:hover {
         background-color: #0c2343;
         margin-top: -2px;
         border: 2px solid white;
     }
 }
+    
+

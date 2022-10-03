@@ -45,19 +45,19 @@
     img {
       filter: brightness(100%);
     }
-    #project-text {
+    .project-text {
       display: none;
     }
   }
 
-  .project-text-1 {
+  #project-text-1 {
     position: absolute;
     left: 0px;
     top: 35px;
     text-align: center;
   }
 
-  .project-text-2{
+  #project-text-2{
     position: absolute;
     left: 50px;
     top: 35px;
@@ -67,7 +67,7 @@
     }
   } 
   
-  .project-text-3, .project-text-4 {
+  #project-text-3, #project-text-4 {
     position: absolute;
     left: 50px;
     top: 50px;

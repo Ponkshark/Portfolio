@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
@@ -7,12 +7,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="manifest" href="favicon/site.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/d8fc1f1b84.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+        <script src="jquery-3.6.1.min.js"></script>
         <script src="js/main.js"></script>
     </head>
-    <body id="body-top">
+    <body id="body-top" onload="typeWriter(), typeWriter2();">
         <ul class="navbar" id="navbarid" style="display: none;">
             <li><a href="#body-top" id="k"><h6>K</h6></a></li>
             <li id = "nav-about" class = "nav-option"><a href="#about-me-id">About Me</a></li>
@@ -30,7 +30,6 @@
                 </div>
                 
                 <div class="info-text-cont">
-                    <body onload="typeWriter(), typeWriter2();">
                     <div class="info-text">
                         <h6 id="hero-name"></h6>
                         <h4 id="hero-desc"></h4>
@@ -41,7 +40,7 @@
             
             <div class="about-me-cont" id="about-me-id">
                 <div class="about-me-title-cont">
-                    <h5 id="about-me-id">About me</h5><br>
+                    <h5>About me</h5><br>
                     <p> Kyle Warford is a recently graduated student of the University of 
                         East Anglia. He has studied a mix of Computer Science, and Mathematics,
                         gaining a 2:1 Degree with honors in Mathematics. The experience of two 
@@ -64,30 +63,30 @@
             <div class="portfolio-cont">
                 <div class="project1" id="projectid1" style="visibility:hidden;">
                     <a href="https://ponkshark.github.io/NetMatters/" target="_blank"><img src="img/project1.png" alt="Image of Netmatters website"></a>
-                    <div id="project-text" class="project-text-1">
+                    <div class="project-text" id="project-text-1">
                         <h3>Project 1</h3>
                         <p><a href="https://ponkshark.github.io/NetMatters/" target="_blank">Netmatters Website Recreation</a></p>
-                        <p id="code-lang">HTML, CSS, JavaScript</p>
+                        <p id="code-lang1">HTML, CSS, JavaScript</p>
                     </div>
                 </div>
                 <div class="project2" id="projectid2" style="visibility:hidden;">
                     <a href="https://ponkshark.github.io/JavaScriptArray/" target="_blank"><img src="img/project2.png" alt="Image of JavaScript Website"></a>
-                    <div id="project-text" class="project-text-2">
+                    <div class="project-text" id="project-text-2">
                         <h3>Project 2</h3>
                         <p><a href="https://ponkshark.github.io/JavaScriptArray/" target="_blank">Image Array</a></p>
-                        <p id="code-lang">JavaScript, jQuery</p>
+                        <p id="code-lang2">JavaScript, jQuery</p>
                     </div>
                 </div>
                 <div class="project3" id="projectid3" style="visibility:hidden;">
                     <img src="img/comingsoon.jpg" alt="Coming soon image">
-                    <div id="project-text" class="project-text-3">
+                    <div class="project-text" id="project-text-3">
                         <h3>Project 3</h3>
                         <p><a href="#">View Project</a></p>
                 </div>
                 </div>
                 <div class="project4" id="projectid4" style="visibility:hidden;">
                     <img src="img/comingsoon.jpg" alt="Coming soon image">
-                    <div id="project-text" class="project-text-4">
+                    <div class="project-text" id="project-text-4">
                         <h3>Project 4</h3>
                         <p><a href="#">View Project</a></p>
                 </div>
@@ -99,8 +98,8 @@
                     <h5 id="coding-examples-title-id">Coding Examples</h5>
                     <div class="python-example">
                         <div id="p-example-1" style="visibility:hidden;">
-                            <img src="img/coding-example-1.PNG">
-                            <span id="python-text">
+                            <img src="img/coding-example-1.PNG" alt="Python code function that calculates the maximum power output of a wind turbine">
+                            <div id="python-text">
                                 <h2>Python Example</h2>
                                 <p>During my time at university, I created python files that contain
                                     classes that store information into turbines, as well as store turbines into windfarms.
@@ -110,13 +109,13 @@
                                     upstream and downstream winds, the turbines efficiency, the area achieved by the spinning blades,
                                     and then putting it all into a formula that returns the maximum power of the turbine. 
                                 </p>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="javascript-example">
                         <div id="j-example-1" style="visibility:hidden;">
-                            <img src="img/coding-example-2.png">
-                            <span id="javascript-text">
+                            <img src="img/coding-example-2.png" alt="JavaScript code of a function that creates a typewriter effect to text">
+                            <div id="javascript-text">
                                 <h2>JavaScript Example</h2>
                                 <p>This example uses JavaScript functions to iterate through given text,
                                     letter by letter, and appends them to their corresponding Ids in 
@@ -124,13 +123,13 @@
                                     iterated times equal to the length of the text given.
                                     Thus this function gives a typewriter-like effect to the given text on page load.
                                 </p>
-                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="sql-example">
                         <div id="sql-example-1" style="visibility:hidden;">
-                            <img src="img/coding-example-3.png">
-                            <span id="sql-text">
+                            <img src="img/coding-example-3.png" alt="Database movie SQL example">
+                            <div id="sql-text">
                                 <h2>SQL Example</h2>
                                 <p>This is an example showing the querying of a movie database.<br><br>
                                     Firstly it selects and adds a column header to movies and their
@@ -144,7 +143,7 @@
                                     descending order. Thus showing a final table with each movie with a rating higher than 7,
                                     it's release date, and said rating.
                                 </p>
-                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,11 +189,11 @@
                         <form name="contactForm" id="testtest" onsubmit="return validateForm(document.contactForm.youremail)" method="post">
                             <span id="result"></span>
                             <span class="contact-item">
-                                <label for="yourname" class="contact-label" id="required"><br><br>Your Name</label><br>
+                                <label for="yourname" class="contact-label" id="required-name"><br><br>Your Name</label><br>
                                 <input type="text" id="yourname" name="yourname"><br><br>
                             </span>
                             <span class="contact-item">
-                                <label for="youremail" class="contact-label" id="required">Your Email</label><br>
+                                <label for="youremail" class="contact-label" id="required-email">Your Email</label><br>
                                 <input type="text" id="youremail" name="youremail"><br><br>
                             </span>
                             <span class="contact-item">
@@ -202,7 +201,7 @@
                                 <input type="text" id="yoursubject" name="yoursubject"><br><br>
                             </span>
                             <span class="contact-item">
-                                <label for="yourmessage" class="contact-label" id="required">Message</label><br>
+                                <label for="yourmessage" class="contact-label" id="required-message">Message</label><br>
                                 <textarea id="yourmessage" name="yourmessage"></textarea><br>
                             </span>
                             <span class="sub-item">
@@ -212,11 +211,12 @@
                     </div>
                 </div>
             </div>
-            <a href="#body-top">
             <div class="back-to-top-cont">
-                <button>&#8679<br>
-                    Back to Top</button>
-            </div></a>
+                <a href="#body-top">
+                    &#8679;<br>
+                    Back to Top
+                </a>
+            </div>
     </div>
     </body>
 </html>

@@ -40,7 +40,7 @@
         width: 434px;
     }
 
-    #required:after {
+    #required-name:after,  #required-email:after,  #required-message:after {
         content:" *";
         color: red;
     }

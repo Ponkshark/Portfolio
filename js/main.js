@@ -69,7 +69,7 @@ function opencloseNav() {
     if (document.getElementById("navbarid").style.display === "none") {
         document.getElementById("navbarid").style.display = "block";
         document.getElementById("main").style.marginLeft = "15%";
-        document.getElementById("menu-but-id").style.left = "15vw";
+        document.getElementById("menu-but-id").style.left = "15%";
     } else {
         document.getElementById("navbarid").style.display = "none";
         document.getElementById("main").style.marginLeft = "0";
