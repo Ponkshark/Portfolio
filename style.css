@@ -425,6 +425,12 @@
     top: 35px;
     text-align: center;
   }
+  .portfolio-cont #project-text-3, .portfolio-cont #project-text-4 {
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    text-align: center;
+  }
   .coding-title-cont {
     max-width: 60%;
     margin-left: 25%;
