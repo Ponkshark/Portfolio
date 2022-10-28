@@ -7,8 +7,11 @@
 
     .about-me-title-cont {
         margin-top: 2%;
-        padding-left: 30%;
-        padding-right: 30%;
+        padding-left: 20%;
+        padding-right: 20%;
+        p {
+            font-size: 14px !important;
+        }
         #about-me-id {
             padding-top: 25px;
         }
@@ -56,6 +59,10 @@
                 height: auto;
             }
         }
+        #python-text, #sql-text, #javascript-text {
+            top: 50px;
+            left: 15px;
+        }
     }
 
     .scion-title-cont {
@@ -63,6 +70,20 @@
         margin-right: 15%;
         padding-left: 15%;
         padding-right: 15%;
+        p {
+            font-size: 14px !important;
+        }
+        h5 {
+            font-size: 24px !important;
+        }
+    
+        h4 {
+            font-size: 20px !important;
+        }
+    
+        h2 {
+            font-size: 16px !important;
+        }
         #scion-1{
             padding-top: 25px;
         }
@@ -135,21 +156,35 @@
         }
     }
 
+    .info-text-cont {
+        left: 25%;
+        right: 25%;
+    }
+
+    .about-me-cont {
+        margin-left:15%; 
+        margin-right: 15%;
+    }
+
     .about-me-title-cont {
         margin-top: 2%;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .portfolio-title-cont {
-        margin-left:20%; 
-        margin-right: 10%;
+        margin-left:15%; 
+        margin-right: 15%;
+    }
+    .portfolio-cont {
+        margin-left:15%; 
+        margin-right: 15%;
     }
 
     .coding-title-cont {
         max-width: 70%;
-        margin-left: 20%; 
-        margin-right: 10%;
+        margin-left:15%; 
+        margin-right: 15%;
         .python-example {
             img {
                 width: 433px;
@@ -171,13 +206,13 @@
     }
 
     .scion-title-cont {
-        margin-left:20%; 
+        margin-left:10%; 
         margin-right: 10%;
     }
 
     .contact-title-cont {
-        margin-left:20%; 
-        margin-right: 10%;
+        margin-left:15%; 
+        margin-right: 15%;
     }
 
     .contact-cont {
@@ -190,16 +225,16 @@
     }
 
     .back-to-top-cont {
-        margin-left:20%; 
-        margin-right: 10%;
+        margin-left:15%; 
+        margin-right: 15%;
     }
 
     .info-text-cont {
         h6 {
-            font-size: 30px;
+            font-size: 40px;
         }
         h4 {
-            font-size: 14px;
+            font-size: 24px;
         }
     }
 }
@@ -214,14 +249,18 @@
 
     .info-text-cont {
         h6 {
-            font-size: 25px;
+            font-size: 32px;
         }
         h4 {
-            font-size: 12px;
+            font-size: 18px;
         }
     }
 
     .coding-title-cont {
+        p {
+            line-height: 16px !important;
+            font-size: 10px !important;
+        }
         .python-example {
             img {
                 width: 325px;
@@ -239,6 +278,10 @@
                 width: 325px;
                 height: auto;
             }
+        }
+        #python-text, #sql-text, #javascript-text {
+            top: 40px;
+            left: 15px;
         }
     }
 

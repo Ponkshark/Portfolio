@@ -17,8 +17,8 @@
 
 .info-text-cont {
   position: absolute;
-  left: 30%;
-  right: 20%;
+  left: 33%;
+  right: 17%;
   transform: translate(0, 30vh);
 }
 .info-text-cont h6 {
@@ -353,6 +353,7 @@
   color: white;
   background-color: #13386c;
   border: 3px solid white;
+  padding: 5px 15px;
 }
 .contact-cont button:hover {
   background-color: #0c2343;
@@ -402,8 +403,11 @@
 @media only screen and (max-width: 992px) {
   .about-me-title-cont {
     margin-top: 2%;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .about-me-title-cont p {
+    font-size: 14px !important;
   }
   .about-me-title-cont #about-me-id {
     padding-top: 25px;
@@ -442,11 +446,27 @@
     width: 433px;
     height: auto;
   }
+  .coding-title-cont #python-text, .coding-title-cont #sql-text, .coding-title-cont #javascript-text {
+    top: 50px;
+    left: 15px;
+  }
   .scion-title-cont {
     margin-left: 25%;
     margin-right: 15%;
     padding-left: 15%;
     padding-right: 15%;
+  }
+  .scion-title-cont p {
+    font-size: 14px !important;
+  }
+  .scion-title-cont h5 {
+    font-size: 24px !important;
+  }
+  .scion-title-cont h4 {
+    font-size: 20px !important;
+  }
+  .scion-title-cont h2 {
+    font-size: 16px !important;
   }
   .scion-title-cont #scion-1 {
     padding-top: 25px;
@@ -499,19 +519,31 @@
   .img-container img {
     width: 100%;
   }
+  .info-text-cont {
+    left: 25%;
+    right: 25%;
+  }
+  .about-me-cont {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .about-me-title-cont {
     margin-top: 2%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .portfolio-title-cont {
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .portfolio-cont {
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .coding-title-cont {
     max-width: 70%;
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .coding-title-cont .python-example img {
     width: 433px;
@@ -526,12 +558,12 @@
     height: auto;
   }
   .scion-title-cont {
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 10%;
   }
   .contact-title-cont {
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .contact-cont input {
     width: 340px;
@@ -540,14 +572,14 @@
     width: 334px;
   }
   .back-to-top-cont {
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .info-text-cont h6 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .info-text-cont h4 {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -557,10 +589,14 @@
     padding-right: 10%;
   }
   .info-text-cont h6 {
-    font-size: 25px;
+    font-size: 32px;
   }
   .info-text-cont h4 {
-    font-size: 12px;
+    font-size: 18px;
+  }
+  .coding-title-cont p {
+    line-height: 16px !important;
+    font-size: 10px !important;
   }
   .coding-title-cont .python-example img {
     width: 325px;
@@ -573,6 +609,10 @@
   .coding-title-cont .sql-example img {
     width: 325px;
     height: auto;
+  }
+  .coding-title-cont #python-text, .coding-title-cont #sql-text, .coding-title-cont #javascript-text {
+    top: 40px;
+    left: 15px;
   }
   .contact-cont input {
     width: 240px;

@@ -4,24 +4,28 @@ var txt = 'My Name is Kyle Warford'; /* The text */
 var txt2 = 'I am a Developer';
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("hero-name").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 
+function typeWriters(){
 
-
-setTimeout(
-function typeWriter2() {
-    if (j < txt2.length) {
-      document.getElementById("hero-desc").innerHTML += txt2.charAt(j);
-      j++;
-      setTimeout(typeWriter2, speed);
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("hero-name").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
     }
-  }, 1500);
+  }
+  typeWriter();
+
+  setTimeout(
+  function typeWriter2() {
+      if (j < txt2.length) {
+        document.getElementById("hero-desc").innerHTML += txt2.charAt(j);
+        j++;
+        setTimeout(typeWriter2, speed);
+      }
+    }, 1500);
+
+}
 
 
 function validateForm(inputText) {
